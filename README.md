@@ -1,4 +1,4 @@
-# primerporyecto
+# Primer Proyecto
 
 ## Project setup
 ```
