@@ -1,27 +1,39 @@
 <template>
-  <div class="container">
+  <!--  -->
+  <nav
+    class="navbar navbar-expand-lg navbar-light color scrolling-navbar fixed-top"
+  >
+    <div class="container mb-4">
+      <router-link to="/">Index</router-link>
+    </div>
+  </nav>
+  <!--  -->
+
+  <div class="container mt-4">
     <div class="row">
       <div class="col-12">
-        <h1 class="text-center">Listado de Imagenes</h1>
+        <!--         <h1 class="text-center">Listado de Imagenes</h1>
+ -->
       </div>
     </div>
 
     <div class="row">
-      <div class="col-12 col-sm-6 col-md-4" v-for="items in imagenes" :key="items.id"
+      <div
+        class="col-12 col-sm-6 col-md-4"
+        v-for="items in imagenes"
+        :key="items.id"
       >
-      <Imagen :items="items"/>
-       
+        <Imagen :items="items" />
       </div>
     </div>
   </div>
 </template>
 <script>
-import Imagen from '../components/imagen.vue'
-
+import Imagen from "../components/imagen.vue";
 
 export default {
   name: "Home",
-  components: {Imagen},
+  components: { Imagen },
   data() {
     return {
       imagenes: [],
@@ -35,23 +47,14 @@ export default {
         this.imagenes = data;
       });
   },
-
-  /*    beforeCreate() {
-   console.log("beforeCreate")
- },
- created() {
-   console.log("Created")
- },
- beforeMount(){
-   console.log("beforeMount")
- },
- mounted() {
-   console.log("mounted")
- }, */
 };
 </script>
 <style >
 h1 {
   color: red;
+}
+
+.color {
+  background: rgba(0, 0, 0, 0.192);
 }
 </style>
