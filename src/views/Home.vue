@@ -3,8 +3,9 @@
   <nav
     class="navbar navbar-expand-lg navbar-light color scrolling-navbar fixed-top"
   >
-    <div class="container mb-4">
-      <router-link to="/">Index</router-link>
+  
+    <div class="container mb-1 d-flex justify-content-center">
+      <router-link to="/"><h1 class="text-align-center">AGREGAR IMAGENES</h1></router-link>
     </div>
   </nav>
   <!--  -->
@@ -51,7 +52,8 @@ export default {
 </script>
 <style >
 h1 {
-  color: red;
+  color: white;
+  text-align: end;
 }
 
 .color {

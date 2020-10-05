@@ -37,7 +37,8 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #212121;
+  background:black;
+  
   font-family: sans-serif;
 }
 .box {
