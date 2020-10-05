@@ -1,22 +1,29 @@
 <template>
-  <div class="container">
+  <div class="container" id="bordercolor">
     <div>
-      <h1 class="text-white">Cargar Imagen</h1>
-      <input class="text-white " type="file" @change="onFileSelected" />
-      <button @click="onUpload">Enviar Imagen</button> <br /><br />
+      <div class="container mb-1 mt- d-flex justify-content-center">
+        <h1 class="text-align-center">AGREGAR IMAGENES</h1>
+      </div>
+
+      <div class="mt-4 d-flex justify-content-center">
+        <input class="text-white" type="file" @change="onFileSelected" accept="image/jpeg, image/png, image/jpg, image/gif"/>
+        <button @click="onUpload">Enviar Imagen</button> <br /><br />
+      </div>
+
       <div id="preview">
         <img v-if="url" :src="url" />
       </div>
 
-      <li class="btn btn-info">
-        <router-link to="/Home">HOME</router-link>
+      <li class="btn btn-info mb-2">
+        <div class="  ">
+          <router-link to="/Home"><h1>Ver Imagenes Cargadas</h1></router-link>
+        </div>
       </li>
     </div>
   </div>
 </template>
 
 <script>
-
 import axios from "axios";
 export default {
   name: "Index",
@@ -24,7 +31,7 @@ export default {
   data() {
     return {
       selectedFile: null,
-      url: null,
+      url: 'https://img1.freepng.es/20180127/hgq/kisspng-black-and-white-point-angle-pattern-sky-falling-snow-5a6c6b28abd3a1.9470577615170547607038.jpg',
     };
   },
   methods: {
@@ -44,14 +51,20 @@ export default {
 </script>
 
 <style>
-  #preview {
+#preview {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #preview img {
-  max-width: 100%;
+  max-width: 480px;
   max-height: 500px;
+  margin-bottom: 10px;
 }
-
+#bordercolor {
+  border: 12px solid #1aaf3a;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 </style>
