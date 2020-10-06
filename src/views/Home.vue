@@ -3,24 +3,43 @@
   <nav
     class="navbar navbar-expand-lg navbar-light color scrolling-navbar fixed-top"
   >
+<div class="container d-flex justify-content-center">
+<div class="wrapper ">
+  <li href="#" class="btnhome">
+
+ <router-link to="/" id="col_border"
+          ><h1 class="text-align-center">AGREGAR IMAGENES</h1></router-link
+        >
+    
+  </li>
+</div>
+</div>
+
   
-    <div class="container mb-1 d-flex justify-content-center">
-      <router-link to="/" id="col_border"><h1 class="text-align-center">AGREGAR IMAGENES</h1></router-link>
-    </div>
+  <!--     <router-link to="/" id="col_border"
+        ><h1 class="text-align-center">AGREGAR IMAGENES</h1></router-link
+      >
+     -->
+    <!--  <div class="container d-flex justify-content-center">
+
+      <li class="btn btn-lg btn-block ml-2 bg-danger">
+        <router-link to="/" id="col_border"
+          ><h1 class="text-align-center">AGREGAR IMAGENES</h1></router-link
+        >
+      </li>
+
+    </div> -->
   </nav>
-  <!--  -->
+  
 
   <div class="container mt-4">
     <div class="row">
-      <div class="col-12">
-        <!--         <h1 class="text-center">Listado de Imagenes</h1>
- -->
-      </div>
+      <div class="col-12"></div>
     </div>
 
     <div class="row">
       <div
-        class="col-12 col-sm-6 col-md-4"
+        class="col-12 col-sm-12 col-md-6 col-lg-4"
         v-for="items in imagenes"
         :key="items.id"
       >
@@ -51,15 +70,54 @@ export default {
 };
 </script>
 <style >
-#col_border{
+#col_border {
   text-decoration: none;
 }
 h1 {
-  color: rgb(177, 85, 85);
-  text-align: end;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 
 .color {
-  background: white
+  background: black;
 }
+
+.btnhome {
+  text-decoration: none;
+width: 1550px;
+  border: 5px solid #2c3e50;
+  color: #2c3e50;
+  display: block;
+  font-family: 'trebuchet ms';
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btnhome::before {
+  content: "";
+  background-color: #E26A6A;
+  box-shadow: 10px 10px 0 #F1C40F, 
+              20px 20px 0 #3498DB;
+  position: absolute;
+  left: 0.25rem;
+  top: 0.5rem;
+  height: 102%;
+  width: 102%;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+.btnhome:hover::before {
+  box-shadow: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 </style>

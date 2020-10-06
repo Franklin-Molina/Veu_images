@@ -47,14 +47,14 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 15px;
-  margin:50px;
+  margin-top: 100px;
 }
 .card {
   position: relative;
   width: 300px;
   height: 350px;
   background: #fff;
-  margin: 0 auto;
+  margin-top: 50px;
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
