@@ -2,7 +2,7 @@
 <template>
 
  
-   <div class="box">
+   <div class="box" >
     <div class="card">
       <div class="imgBx">
         <img id="imagenes" :src="items.url" class="card-img-top" />
@@ -37,7 +37,8 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background:black;
+  background: black;
+  
   
   font-family: sans-serif;
 }

@@ -1,11 +1,11 @@
-<template>
+<template >
   <!--  -->
   <nav
     class="navbar navbar-expand-lg navbar-light color scrolling-navbar fixed-top"
   >
   
     <div class="container mb-1 d-flex justify-content-center">
-      <router-link to="/"><h1 class="text-align-center">AGREGAR IMAGENES</h1></router-link>
+      <router-link to="/" id="col_border"><h1 class="text-align-center">AGREGAR IMAGENES</h1></router-link>
     </div>
   </nav>
   <!--  -->
@@ -51,12 +51,15 @@ export default {
 };
 </script>
 <style >
+#col_border{
+  text-decoration: none;
+}
 h1 {
-  color: white;
+  color: rgb(177, 85, 85);
   text-align: end;
 }
 
 .color {
-  background: rgba(0, 0, 0, 0.192);
+  background: white
 }
 </style>
