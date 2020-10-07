@@ -1,4 +1,11 @@
-# Primer Proyecto
+# Consumiendo una API
+## Integrantes
+
+- Franklin Molina
+- Carlos Paz
+
+
+
 
 ## Project setup
 ```

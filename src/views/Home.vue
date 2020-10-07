@@ -15,20 +15,6 @@
 </div>
 </div>
 
-  
-  <!--     <router-link to="/" id="col_border"
-        ><h1 class="text-align-center">AGREGAR IMAGENES</h1></router-link
-      >
-     -->
-    <!--  <div class="container d-flex justify-content-center">
-
-      <li class="btn btn-lg btn-block ml-2 bg-danger">
-        <router-link to="/" id="col_border"
-          ><h1 class="text-align-center">AGREGAR IMAGENES</h1></router-link
-        >
-      </li>
-
-    </div> -->
   </nav>
   
 
@@ -83,12 +69,13 @@ h1 {
 }
 
 .btnhome {
+    font-family: Lato, sans-serif;
   text-decoration: none;
 width: 1550px;
   border: 5px solid #2c3e50;
   color: #2c3e50;
   display: block;
-  font-family: 'trebuchet ms';
+ 
   font-size: 2rem;
   letter-spacing: 0.1rem;
   padding: 1rem;
